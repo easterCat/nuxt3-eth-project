@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ILink } from '~/types'
+import type { ILink } from '~/types'
 defineProps({
   link: {
     type: Object as () => ILink,
@@ -9,17 +9,15 @@ defineProps({
 </script>
 
 <template>
-  <NuxtLink class="global-text py-4 hover:shadow-xl" :to="link.url">
-    <div
-      class="flex items-center justify-between space-x-3 rounded-lg bg-gray-300 p-4 dark:bg-gray-700"
-    >
-      <div class="item-center flex">
-        <UnoIcon :class="link.icon" class="mr-3 text-lg dark:text-gray-400" />
-        {{ link.title }}
-      </div>
-      <UnoIcon
-        class="i-ic-round-arrow-forward-ios global-text h-6 w-6 text-lg"
-      />
-    </div>
-  </NuxtLink>
+    <NuxtLink class="py-4 global-text hover:shadow-xl" :to="link.url">
+        <div
+            class="flex items-center justify-between p-4 space-x-3 bg-gray-300 rounded-lg dark:bg-gray-700"
+        >
+            <div class="flex item-center">
+                <UnoIcon :class="link.icon" class="mr-3 text-lg dark:text-gray-400" />
+                {{ link.title }}
+            </div>
+            <UnoIcon class="w-6 h-6 text-lg i-ic-round-arrow-forward-ios global-text" />
+        </div>
+    </NuxtLink>
 </template>

@@ -1,3 +1,3 @@
 <template>
-  <Starter />
+    <Starter />
 </template>

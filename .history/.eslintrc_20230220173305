@@ -1,0 +1,19 @@
+{
+    "extends": [
+        "@antfu"
+    ],
+    "rules": {
+        "@typescript-eslint/consistent-type-imports": "off",
+        "vue/no-deprecated-slot-attribute": "off",
+        "vue/no-reserved-component-names": "off",
+        "vue/html-indent": "off",
+        "indent": "off",
+        "@typescript-eslint/indent": "off",
+        "semi": "off",
+        "@typescript-eslint/semi": "off",
+        "vue/first-attribute-linebreak": "off",
+        "vue/html-self-closing": "off",
+        "vue/html-closing-bracket-newline": "off",
+        "vue/singleline-html-element-content-newline": "off"
+    }
+}
